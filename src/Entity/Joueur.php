@@ -7,8 +7,10 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use PhpParser\Node\Name;
 
+
+
 #[ORM\Entity(repositoryClass: JoueurRepository::class)]
-class Joueurs
+class Joueur
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -109,4 +111,6 @@ class Joueurs
 
         return $this;
     }
+
+    
 }
